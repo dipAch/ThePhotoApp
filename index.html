@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Camera Access, Testing 1-2-3 !!!</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="camera-container-left">
+			<video id="camera-stream" width="500" autoplay></video>
+			<div class = "filter_panel">
+			<a href = "#" id="snap">Snap Photo</a>
+			</div>
+		</div>
+		<div id="image-container-right">
+			<canvas id="canvas" width="500" height="400"></canvas>
+			<div class = "filter_panel">
+				<a href = "#" onclick = "changeFilter('');">Normal</a>
+				<a href = "#" onclick = "changeFilter('sepia(1)');">Sepia</a>
+				<a href = "#" onclick = "changeFilter('blur(3px)');">Blur</a>
+				<a href = "#" onclick = "changeFilter('grayscale(1)');">Grayscale</a>
+				<a href = "#" onclick = "changeFilter('brightness(2.5)');">Brightness</a>
+				<a href = "#" onclick = "changeFilter('contrast(5)');">Contrast</a>
+			</div>
+			<div class = "filter_panel">
+				<a href = "#" onclick = "changeFilter('hue-rotate(125deg)');">Hue-Rotate</a>
+				<a href = "#" onclick = "changeFilter('invert(1)');">Invert</a>
+				<a href = "#" onclick = "changeFilter('saturate(3)');">Saturate</a>
+				<a href = "#" onclick = "changeFilter('opacity(0.3)');">Opacity</a>
+				<a href="#" class="button" id="btn-download">Download</a>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
